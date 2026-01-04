@@ -1,0 +1,8 @@
+#formacion li strong,
+#formacion li span,
+#formacion li time {
+	display: block;
+}
+#formacion li time {
+	font-style: italic;
+}
