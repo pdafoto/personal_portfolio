@@ -77,3 +77,25 @@ section h2::after {
   border-bottom-color: var(--accent);
   color: var(--accent);
 }
+
+.hero {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.hero-avatar {
+  width: 220px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid var(--accent);
+  background: var(--panel);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.hero-text p {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
