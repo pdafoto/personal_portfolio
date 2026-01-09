@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio de Nicolás Pérez de Agustín</title>
+	<link rel="stylesheet" href="../styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header class="site-header">
+		<h1>Portfolio de Nicolás Pérez de Agustín</h1>
+		<nav>
+			<ul>
+				<li><a href="#sobre-mi">About Me</a></li>
+				<li><a href="#formacion">Education</a></li>
+				<li><a href="#proyectos">Projects</a></li>
+				<li><a href="#contacto">Contact</a></li>
+			</ul>
+		</nav>
+		<nav class="lang-switch">
+			<a href="../">ES</a> | <a href="./">EN</a>
+		</nav>
+	</header>
+
+	<main>
+		<section id="sobre-mi">
+			<h2>About Me</h2>
+			<div class="hero">
+				<img class="hero-avatar" src="../img/nicolas.png" alt="Picture of Nicolás Pérez de Agustín">
+				<div class="hero-text">
+					<p>
+						I'm Nicolás, and for over 15 years I've worked as an architecture-specialized photographer and managed my own
+						business projects. During this time, I've learned to be responsible, organized, solution-oriented, and always
+						focused on results.
+					</p>
+					<p>
+						In recent years, I've decided to pivot my career and focus on the tech sector. I've completed a Master's in
+						Artificial Intelligence and currently study ASIR and Cybersecurity. I also went through 42 Madrid, where I built
+						a solid foundation in programming and a very practical mindset for learning, collaborating, and solving technical
+						problems.
+					</p>
+					<p>
+						This portfolio showcases some of the projects I'm developing during my training. My goal is to continue growing
+						in IT and bring value from a hybrid profile: technical, analytical, and with extensive prior experience in
+						management and entrepreneurship.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="formacion">
+			<h2>Education</h2>
+			<ul>
+				<li>
+					<strong>IT Technician in Systems Administration and Networks</strong>
+					<span>Prometeo by ThePower</span>
+					<time datetime="2025-09">September 2025 - Actualidad</time>
+				</li>
+				<li>
+					<strong>Programming Curriculum</strong>
+					<span>42 Madrid - Fundación Telefónica</span>
+					<time datetime="2023-09/2025-12">September 2023 - Diciembre 2025</time>
+				</li>
+				<li>
+					<strong>Expert in Artificial Intelligence</strong>
+					<span>BIG School / Universidad Internacional Isabel I de Castilla</span>
+					<time datetime="2023-01/2025-04">Enero 2023 - Abril 2025</time>
+				</li>
+				<li>
+					<strong>Master's in Photography</strong>
+					<span>EFTI Centro Internacional de Fotografía y Cine</span>
+					<time datetime="2006-09/2007-06">September 2006 - July 2007</time>
+				</li>
+				<li>
+					<strong>Bachelor's Degree in Business Administration and Management</strong>
+					<span>Universidad Autónoma de Madrid</span>
+					<time datetime="2001-09/2006-06">September 2001 - July 2006</time>
+				</li>
+				<li>
+					<strong>Studies in Economics</strong>
+					<span>Universidad Carlos III de Madrid</span>
+					<time datetime="1997-09/2001-06">September 1997 - July 2001</time>
+				</li>
+			</ul>
+		</section>
+		<section id="proyectos">
+			<h2>Projects</h2>
+			<article>
+				<h3><a href="https://github.com/pdafoto/42Piscine" target="_blank" rel="noopener">42 - Piscine</a></h3>
+				<p>
+					Collection of progressive exercises in C that work on logic, recursion, pointers, memory management, basic
+					algorithms, and simple data structures. It includes everything from elementary functions to solving more
+					complex problems, always with an emphasis on clean, modular, and efficient code.
+				</p>
+			</article>
+			<article>
+				<h3><a href="https://github.com/pdafoto/42_Libft" target="_blank" rel="noopener">libft</a></h3>
+				<p>
+					Creation of a custom standard library in C reimplementing basic functions. It establishes the foundation for
+					style, rigor, memory management, and modularity.
+				</p>
+			</article>
+			<article>
+				<h3><a href="https://github.com/pdafoto/42_ft_printf" target="_blank" rel="noopener">ft_printf</a></h3>
+				<p>
+					Development of a custom version of printf, delving deeper into advanced string formatting, variadic functions,
+					and code robustness.
+				</p>
+			</article>
+			<article>
+				<h3><a href="https://github.com/pdafoto/42_get_next_line" target="_blank" rel="noopener">get_next_line</a></h3>
+				<p>
+					Implementation of a function capable of reading files line by line, efficiently managing buffers and dynamic
+					memory.
+				</p>
+			</article>
+			<article>
+				<h3><a href="https://github.com/pdafoto/42_Push_swap" target="_blank" rel="noopener">push_swap</a></h3>
+				<p>
+					Optimized sorting algorithm using a limited set of stack operations. It combines algorithmic logic, performance,
+					and complexity analysis.
+				</p>
+			</article>
+			<article>
+				<h3><a href="https://github.com/pdafoto/42_so_long" target="_blank" rel="noopener">so_long</a></h3>
+				<p>
+					Simple 2D video game in C using MiniLibX. It introduces graphics, events, map handling, and best practices in
+					software architecture.
+				</p>
+			</article>
+		</section>
+		<section id="contacto">
+			<h2>Contact</h2>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/blowupphotos/" target="_blank" rel="noopener">LinkedIn</a></li>
+				<li><a href="https://github.com/pdafoto" target="_blank" rel="noopener">GitHub</a></li>
+			</ul>
+			<form action="mailto:info@blowup.photos" method="post" enctype="text/plain">
+				<div>
+					<label for="nombre">Name:</label>
+					<input type="text" id="nombre" name="nombre" required>
+				</div>
+				<div>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+				<div>
+					<label for="mensaje">Message:</label>
+					<textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+				</div>
+				<button type="submit">Enviar</button>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2026 Nicolás Pérez de Agustín</p>
+	</footer>
+</body>
