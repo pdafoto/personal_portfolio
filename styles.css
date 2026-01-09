@@ -1,3 +1,19 @@
+:root {
+  --bg: #0f1216;
+  --panel: #151a21;
+  --text: #e6e9ef;
+  --muted: #a9b0bb;
+  --accent: #4fe3c1;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
 #formacion li strong,
 #formacion li span,
 #formacion li time {
