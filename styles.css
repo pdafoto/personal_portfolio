@@ -6,12 +6,34 @@
   --accent: #4fe3c1;
 }
 
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+
 body {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+}
+
+section {
+  padding: 56px 0;
+  border-bottom: 1px solid #1f2630;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin: 0 0 24px;
+  color: var(--text);
+}
+
+section h2::after {
+  content: ".";
+  color: var(--accent);
 }
 
 #formacion li strong,
@@ -21,4 +43,37 @@ body {
 }
 #formacion li time {
 	font-style: italic;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 24px;
+}
+
+.site-header h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.site-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.site-header nav a:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
 }
