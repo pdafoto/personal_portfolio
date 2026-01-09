@@ -6,6 +6,15 @@
   --accent: #4fe3c1;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -52,7 +61,7 @@ footer {
 
 .site-header h1 {
   font-size: 1.8rem;
-  margin: 0.5px;
+  margin: 0;
 }
 
 .site-header nav ul {
@@ -74,10 +83,6 @@ footer {
 .site-header nav a:hover {
   border-bottom-color: var(--accent);
   color: var(--accent);
-}
-
-.hero {
-  display: block;
 }
 
 .hero-avatar {
@@ -230,11 +235,10 @@ footer {
     gap: 16px;
   }
 
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
   .hero-avatar {
+    float: none;
+    display: block;
+    margin: 0 0 16px;
     width: 180px;
   }
 }
