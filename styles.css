@@ -36,6 +36,13 @@ section h2::after {
   color: var(--accent);
 }
 
+footer {
+  border-top: 1px solid #1f2630;
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+}
+
 .site-header {
   display: flex;
   align-items: center;
@@ -44,8 +51,8 @@ section h2::after {
 }
 
 .site-header h1 {
-  font-size: 1.6rem;
-  margin: 0;
+  font-size: 1.8rem;
+  margin: 0.5px;
 }
 
 .site-header nav ul {
@@ -70,25 +77,27 @@ section h2::after {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 32px;
-  align-items: start;
+  display: block;
 }
 
 .hero-avatar {
-  width: 220px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  float: left;
+  width: 180px;
+  margin: 0 20px 12px 0;
   border-radius: 12px;
   border: 2px solid var(--accent);
-  background: var(--panel);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  object-fit: cover;
 }
 
 .hero-text p {
   margin: 0 0 16px;
   color: var(--muted);
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 #formacion li strong,
@@ -98,6 +107,31 @@ section h2::after {
 }
 #formacion li time {
 	font-style: italic;
+}
+
+#formacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+#formacion li {
+  background: var(--panel);
+  border: 1px solid #1f2630;
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+#formacion li strong {
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+#formacion li span,
+#formacion li time {
+  color: var(--muted);
 }
 
 #proyectos article {
